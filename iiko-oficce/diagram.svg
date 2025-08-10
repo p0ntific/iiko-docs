@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2200 1200" width="100%" role="graphics-document document" aria-roledescription="flowchart">
+  <defs>
+    <style>
+      .bg { fill: #292d3e; }
+      .panel { fill: rgba(113,124,180,0.16); stroke: rgba(255,255,255,0.1); }
+      .node { fill: #2e3142; stroke: rgba(255,255,255,0.08); stroke-width: 1; rx: 8; ry: 8; }
+      .node text { fill: #e6e9ff; font: 600 14px "Trebuchet MS", Verdana, Arial, sans-serif; }
+      .title { fill: #e6e9ff; font: 700 18px "Trebuchet MS", Verdana, Arial, sans-serif; }
+      .cluster-title { fill: #ffffff; font: 600 14px "Trebuchet MS", Verdana, Arial, sans-serif; }
+      .edge { stroke: #babed8; stroke-width: 2; fill: none; }
+      .edge.dashed { stroke-dasharray: 6 4; }
+      .label { fill: #babed8; font: 12px "Trebuchet MS", Verdana, Arial, sans-serif; }
+      .badge { fill: #3a3f58; stroke: rgba(255,255,255,0.06); rx: 6; ry: 6; }
+
+      .admin   .node { fill: #3a3a3a; }
+      .menu    .node { fill: #33444f; }
+      .proc    .node { fill: #3d4a3f; }
+      .wh      .node { fill: #3e3b52; }
+      .reports .node { fill: #3b4e5a; }
+
+      a { text-decoration: none; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#babed8" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="2200" height="1200" />
+  <text x="1100" y="36" text-anchor="middle" class="title">iikoOffice — Страницы и связи</text>
+
+  <!-- Clusters -->
+  <g class="cluster admin">
+    <rect class="panel" x="1580" y="160" width="520" height="520" />
+    <text x="1600" y="180" class="cluster-title">Администрирование</text>
+  </g>
+  <g class="cluster menu">
+    <rect class="panel" x="80" y="160" width="520" height="520" />
+    <text x="100" y="180" class="cluster-title">Номенклатура и рецептуры</text>
+  </g>
+  <g class="cluster proc">
+    <rect class="panel" x="640" y="160" width="420" height="520" />
+    <text x="660" y="180" class="cluster-title">Закупки</text>
+  </g>
+  <g class="cluster wh">
+    <rect class="panel" x="1080" y="160" width="460" height="760" />
+    <text x="1100" y="180" class="cluster-title">Склад и производство</text>
+  </g>
+  <g class="cluster reports">
+    <rect class="panel" x="840" y="960" width="520" height="160" />
+    <text x="860" y="980" class="cluster-title">Отчётность</text>
+  </g>
+
+  <!-- Overview -->
+  <g class="node" transform="translate(1020,90)">
+    <a xlink:href="pages/overview.md">
+      <rect width="320" height="48" />
+      <text x="160" y="30" text-anchor="middle">Обзор (overview)</text>
+    </a>
+  </g>
+
+  <!-- Admin nodes -->
+  <g class="admin">
+    <g class="node" transform="translate(1620,220)">
+      <a xlink:href="pages/settings.md"><rect width="300" height="56" /><text x="150" y="34" text-anchor="middle">Настройки (settings)</text></a>
+    </g>
+    <g class="node" transform="translate(1620,310)">
+      <a xlink:href="pages/security.md"><rect width="300" height="56" /><text x="150" y="34" text-anchor="middle">Безопасность (security)</text></a>
+    </g>
+    <g class="node" transform="translate(1620,400)">
+      <a xlink:href="pages/integrations.md"><rect width="300" height="56" /><text x="150" y="34" text-anchor="middle">Интеграции (integrations)</text></a>
+    </g>
+  </g>
+
+  <!-- Menu nodes -->
+  <g class="menu">
+    <g class="node" transform="translate(120,220)">
+      <a xlink:href="pages/menu.md"><rect width="300" height="56" /><text x="150" y="34" text-anchor="middle">Номенклатура (menu)</text></a>
+    </g>
+    <g class="node" transform="translate(120,310)">
+      <a xlink:href="pages/products.md"><rect width="300" height="56" /><text x="150" y="34" text-anchor="middle">Продукты (products)</text></a>
+    </g>
+    <g class="node" transform="translate(120,400)">
+      <a xlink:href="pages/recipes.md"><rect width="300" height="56" /><text x="150" y="34" text-anchor="middle">Рецептуры (recipes)</text></a>
+    </g>
+  </g>
+
+  <!-- Procurement nodes -->
+  <g class="proc">
+    <g class="node" transform="translate(680,220)">
+      <a xlink:href="pages/suppliers.md"><rect width="300" height="56" /><text x="150" y="34" text-anchor="middle">Поставщики (suppliers)</text></a>
+    </g>
+    <g class="node" transform="translate(680,310)">
+      <a xlink:href="pages/purchase-orders.md"><rect width="300" height="56" /><text x="150" y="34" text-anchor="middle">Заказы (purchase-orders)</text></a>
+    </g>
+    <g class="node" transform="translate(680,400)">
+      <a xlink:href="pages/arrivals.md"><rect width="300" height="56" /><text x="150" y="34" text-anchor="middle">Поступления (arrivals)</text></a>
+    </g>
+  </g>
+
+  <!-- Warehouse/Production nodes -->
+  <g class="wh">
+    <g class="node" transform="translate(1120,220)">
+      <a xlink:href="pages/production.md"><rect width="320" height="56" /><text x="160" y="34" text-anchor="middle">Производство (production)</text></a>
+    </g>
+    <g class="node" transform="translate(1120,310)">
+      <a xlink:href="pages/stock.md"><rect width="320" height="56" /><text x="160" y="34" text-anchor="middle">Остатки и партии (stock)</text></a>
+    </g>
+    <g class="node" transform="translate(1120,400)">
+      <a xlink:href="pages/movements.md"><rect width="320" height="56" /><text x="160" y="34" text-anchor="middle">Перемещения (movements)</text></a>
+    </g>
+    <g class="node" transform="translate(1120,490)">
+      <a xlink:href="pages/writeoffs.md"><rect width="320" height="56" /><text x="160" y="34" text-anchor="middle">Списания (writeoffs)</text></a>
+    </g>
+    <g class="node" transform="translate(1120,580)">
+      <a xlink:href="pages/inventory.md"><rect width="320" height="56" /><text x="160" y="34" text-anchor="middle">Инвентаризация (inventory)</text></a>
+    </g>
+  </g>
+
+  <!-- Reports node -->
+  <g class="reports">
+    <g class="node" transform="translate(900,1020)">
+      <a xlink:href="pages/reports.md"><rect width="400" height="56" /><text x="200" y="34" text-anchor="middle">Отчёты (reports)</text></a>
+    </g>
+  </g>
+
+  <!-- Edges -->
+  <!-- Overview to key modules -->
+  <path class="edge" marker-end="url(#arrow)" d="M1180,114 C1500,120 1620,160 1620,200" />
+  <path class="edge" marker-end="url(#arrow)" d="M1020,114 C760,120 420,150 420,210" />
+  <path class="edge" marker-end="url(#arrow)" d="M1100,138 C1100,170 1100,190 1100,210 1100,220 1120,220 1120,220" />
+
+  <!-- Admin relations -->
+  <path class="edge" marker-end="url(#arrow)" d="M1770,246 C1770,268 1770,290 1770,310" />
+  <path class="edge" marker-end="url(#arrow)" d="M1770,338 C1770,360 1770,382 1770,400" />
+
+  <!-- Menu relations -->
+  <path class="edge" marker-end="url(#arrow)" d="M270,346 C270,368 270,390 270,400" />
+  <path class="edge" marker-end="url(#arrow)" d="M420,346 C420,368 420,390 420,400" />
+
+  <!-- Procurement flow: suppliers -> orders -> arrivals -> stock -->
+  <path class="edge" marker-end="url(#arrow)" d="M830,246 C830,268 830,290 830,310" />
+  <path class="edge" marker-end="url(#arrow)" d="M830,338 C830,360 830,382 830,400" />
+  <path class="edge" marker-end="url(#arrow)" d="M980,428 C1080,440 1120,410 1120,366" />
+
+  <!-- Production uses recipes, impacts stock -->
+  <path class="edge" marker-end="url(#arrow)" d="M420,428 C650,470 960,260 1120,248" />
+  <path class="edge" marker-end="url(#arrow)" d="M1280,248 C1280,270 1280,292 1280,310" />
+
+  <!-- Warehouse docs affect stock -->
+  <path class="edge" marker-end="url(#arrow)" d="M1280,428 C1280,450 1280,472 1280,490" />
+  <path class="edge" marker-end="url(#arrow)" d="M1280,518 C1280,540 1280,562 1280,580" />
+  <path class="edge" marker-end="url(#arrow)" d="M1120,518 C1080,560 1080,620 1120,660 1160,700 1200,660 1280,638" />
+
+  <!-- Reports from key sources -->
+  <path class="edge" marker-end="url(#arrow)" d="M1100,366 C1100,760 1100,960 1100,1018" />
+  <path class="edge" marker-end="url(#arrow)" d="M830,456 C830,700 900,980 1080,1018" />
+  <path class="edge" marker-end="url(#arrow)" d="M1280,608 C1280,820 1200,980 1120,1018" />
+  <path class="edge" marker-end="url(#arrow)" d="M1280,338 C1400,520 1320,920 1180,1018" />
+
+  <!-- Settings influence configs (dashed) -->
+  <path class="edge dashed" marker-end="url(#arrow)" d="M1620,248 C1500,248 1440,248 1420,248" />
+  <path class="edge dashed" marker-end="url(#arrow)" d="M1620,248 C1350,240 1200,240 1120,240" />
+  <path class="edge dashed" marker-end="url(#arrow)" d="M1620,248 C1200,230 780,230 680,230" />
+  <path class="edge dashed" marker-end="url(#arrow)" d="M1620,248 C1150,220 580,220 420,220" />
+
+  <!-- Legend -->
+  <g transform="translate(80,1040)">
+    <rect class="badge" width="560" height="80" />
+    <text class="label" x="16" y="28">Сплошные стрелки — поток документов/данных</text>
+    <text class="label" x="16" y="54">Пунктирные стрелки — зависимости настроек/справочников</text>
+  </g>
+</svg>
+

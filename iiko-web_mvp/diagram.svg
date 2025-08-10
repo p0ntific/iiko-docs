@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" width="100%">
+  <style>.bg{fill:#292d3e}.node{fill:#2e3142;stroke:#444;stroke-width:1;rx:8;ry:8}
+  .node text{fill:#e6e9ff;font:600 14px Trebuchet MS}.title{fill:#e6e9ff;font:700 18px Trebuchet MS}
+  .edge{stroke:#babed8;stroke-width:2;fill:none}.label{fill:#babed8;font:12px Trebuchet MS}</style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#babed8"/></marker></defs>
+  <rect class="bg" width="1400" height="820"/>
+  <text x="700" y="30" text-anchor="middle" class="title">iikoWeb MVP — Потоки</text>
+  <g class="node" transform="translate(80,120)"><rect width="320" height="48"/><text x="160" y="30" text-anchor="middle">Персонал</text></g>
+  <g class="node" transform="translate(80,220)"><rect width="320" height="48"/><text x="160" y="30" text-anchor="middle">Меню и цены</text></g>
+  <g class="node" transform="translate(440,120)"><rect width="320" height="48"/><text x="160" y="30" text-anchor="middle">Заказы</text></g>
+  <g class="node" transform="translate(440,200)"><rect width="320" height="48"/><text x="160" y="30" text-anchor="middle">Доставка</text></g>
+  <g class="node" transform="translate(840,120)"><rect width="320" height="48"/><text x="160" y="30" text-anchor="middle">Лояльность</text></g>
+  <g class="node" transform="translate(840,200)"><rect width="320" height="48"/><text x="160" y="30" text-anchor="middle">Отчёты</text></g>
+  <g class="node" transform="translate(440,300)"><rect width="320" height="48"/><text x="160" y="30" text-anchor="middle">Уведомления</text></g>
+  <g class="node" transform="translate(840,300)"><rect width="320" height="48"/><text x="160" y="30" text-anchor="middle">Агрегаторы</text></g>
+  <path class="edge" marker-end="url(#a)" d="M240 148 C360 148 440 148 440 148"/><text class="label" x="360" y="140">операторы</text>
+  <path class="edge" marker-end="url(#a)" d="M240 248 C360 248 440 248 440 248"/><text class="label" x="360" y="240">каталог → корзина</text>
+  <path class="edge" marker-end="url(#a)" d="M600 148 C720 148 840 148 840 148"/><text class="label" x="720" y="140">бонусы/акции</text>
+  <path class="edge" marker-end="url(#a)" d="M600 208 C720 208 840 208 840 208"/><text class="label" x="720" y="200">KPI/отчёты</text>
+  <path class="edge" marker-end="url(#a)" d="M600 248 C680 280 760 280 840 208"/><text class="label" x="720" y="260">уведомления</text>
+  <path class="edge" marker-end="url(#a)" d="M1100 320 C1080 280 980 220 760 220"/><text class="label" x="980" y="260">импорт заказов</text>
+</svg>
+

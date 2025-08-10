@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1400 820" width="100%">
+  <style>.bg{fill:#292d3e}.node{fill:#2e3142;stroke:#444;stroke-width:1;rx:8;ry:8}
+  .node text{fill:#e6e9ff;font:600 14px Trebuchet MS}.title{fill:#e6e9ff;font:700 18px Trebuchet MS}
+  .edge{stroke:#babed8;stroke-width:2;fill:none}.label{fill:#babed8;font:12px Trebuchet MS}</style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#babed8"/></marker></defs>
+  <rect class="bg" width="1400" height="820"/>
+  <text x="700" y="30" text-anchor="middle" class="title">iikoFront MVP — Потоки</text>
+  <g class="node" transform="translate(80,100)"><a xlink:href="pages/login-shifts.md"><rect width="300" height="48"/><text x="150" y="30" text-anchor="middle">Логин/Смены</text></a></g>
+  <g class="node" transform="translate(80,220)"><a xlink:href="pages/fastfood.md"><rect width="300" height="48"/><text x="150" y="30" text-anchor="middle">Фастфуд</text></a></g>
+  <g class="node" transform="translate(80,300)"><a xlink:href="pages/restaurant-service.md"><rect width="300" height="48"/><text x="150" y="30" text-anchor="middle">Ресторан (столы)</text></a></g>
+  <g class="node" transform="translate(460,220)"><a xlink:href="pages/payment.md"><rect width="280" height="48"/><text x="140" y="30" text-anchor="middle">Оплата/ФР</text></a></g>
+  <g class="node" transform="translate(460,300)"><a xlink:href="pages/kitchen-screen.md"><rect width="280" height="48"/><text x="140" y="30" text-anchor="middle">Кухонный экран (KDS)</text></a></g>
+  <g class="node" transform="translate(460,380)"><a xlink:href="pages/stoplist.md"><rect width="280" height="48"/><text x="140" y="30" text-anchor="middle">Стоп-лист</text></a></g>
+  <g class="node" transform="translate(860,220)"><a xlink:href="pages/warehouse-docs.md"><rect width="320" height="48"/><text x="160" y="30" text-anchor="middle">Списание/Склад</text></a></g>
+  <g class="node" transform="translate(860,300)"><rect width="320" height="48"/><text x="160" y="30" text-anchor="middle">iikoOffice (интеграция)</text></g>
+  <path class="edge" marker-end="url(#a)" d="M230 128 C360 128 460 128 460 128"/><text class="label" x="360" y="120">открыть смену</text>
+  <path class="edge" marker-end="url(#a)" d="M230 248 C360 248 460 248 460 248"/><text class="label" x="360" y="240">заказ → оплата</text>
+  <path class="edge" marker-end="url(#a)" d="M230 328 C360 328 460 328 460 328"/><text class="label" x="360" y="320">счет → оплата</text>
+  <path class="edge" marker-end="url(#a)" d="M380 248 C420 260 440 290 460 300"/><text class="label" x="420" y="286">на кухню</text>
+  <path class="edge" marker-end="url(#a)" d="M740 300 C800 300 860 300 860 300"/><text class="label" x="800" y="292">KDS события</text>
+  <path class="edge" marker-end="url(#a)" d="M600 248 C720 248 860 248 860 248"/><text class="label" x="720" y="240">фискализация → списание</text>
+  <path class="edge" marker-end="url(#a)" d="M600 388 C700 388 760 350 780 320"/><text class="label" x="660" y="360">блокировка блюд</text>
+  <path class="edge" marker-end="url(#a)" d="M1020 248 C1040 260 1060 280 1060 300"/><text class="label" x="1070" y="280">webhook</text>
+</svg>
+

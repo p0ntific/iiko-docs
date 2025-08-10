@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 900" width="100%">
+  <style>.bg{fill:#292d3e}.panel{fill:rgba(113,124,180,.16);stroke:rgba(255,255,255,.1)}
+    .node{fill:#2e3142;stroke:rgba(255,255,255,.08);stroke-width:1;rx:8;ry:8}
+    .node text{fill:#e6e9ff;font:600 14px Trebuchet MS,Verdana,Arial}
+    .title{fill:#e6e9ff;font:700 18px Trebuchet MS,Verdana,Arial}
+    .edge{stroke:#babed8;stroke-width:2;fill:none}.label{fill:#babed8;font:12px Trebuchet MS}
+  </style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#babed8"/></marker></defs>
+  <rect class="bg" width="1600" height="900"/>
+  <text x="800" y="30" text-anchor="middle" class="title">iikoOffice MVP — Потоки</text>
+  <g class="panel"><rect x="40" y="80" width="1520" height="740" class="panel"/></g>
+  <g class="node" transform="translate(80,120)"><a xlink:href="pages/master-data.md"><rect width="300" height="48"/><text x="150" y="30" text-anchor="middle">Справочники</text></a></g>
+  <g class="node" transform="translate(80,200)"><a xlink:href="pages/recipes.md"><rect width="300" height="48"/><text x="150" y="30" text-anchor="middle">Техкарты</text></a></g>
+  <g class="node" transform="translate(420,120)"><a xlink:href="pages/suppliers.md"><rect width="300" height="48"/><text x="150" y="30" text-anchor="middle">Поставщики/Прайсы</text></a></g>
+  <g class="node" transform="translate(420,200)"><a xlink:href="pages/procurement.md"><rect width="300" height="48"/><text x="150" y="30" text-anchor="middle">Заказы</text></a></g>
+  <g class="node" transform="translate(760,120)"><a xlink:href="pages/arrivals.md"><rect width="300" height="48"/><text x="150" y="30" text-anchor="middle">Поступления</text></a></g>
+  <g class="node" transform="translate(760,200)"><a xlink:href="pages/stock.md"><rect width="300" height="48"/><text x="150" y="30" text-anchor="middle">Остатки/Партии</text></a></g>
+  <g class="node" transform="translate(760,280)"><a xlink:href="pages/writeoffs.md"><rect width="300" height="48"/><text x="150" y="30" text-anchor="middle">Списания</text></a></g>
+  <g class="node" transform="translate(760,360)"><a xlink:href="pages/inventory.md"><rect width="300" height="48"/><text x="150" y="30" text-anchor="middle">Инвентаризация</text></a></g>
+  <g class="node" transform="translate(1120,120)"><a xlink:href="pages/reports.md"><rect width="360" height="48"/><text x="180" y="30" text-anchor="middle">Отчёты</text></a></g>
+  <g class="node" transform="translate(1120,200)"><a xlink:href="pages/integrations.md"><rect width="360" height="48"/><text x="180" y="30" text-anchor="middle">Интеграции (Front)</text></a></g>
+  <g class="node" transform="translate(1120,280)"><a xlink:href="pages/security.md"><rect width="360" height="48"/><text x="180" y="30" text-anchor="middle">Безопасность</text></a></g>
+  <path class="edge" marker-end="url(#a)" d="M230 148 C360 148 420 148 420 148"/><text class="label" x="360" y="140">SKU, категории</text>
+  <path class="edge" marker-end="url(#a)" d="M230 228 C360 228 760 228 760 228"/><text class="label" x="520" y="220">состав → списание</text>
+  <path class="edge" marker-end="url(#a)" d="M570 148 C700 148 760 148 760 148"/><text class="label" x="700" y="140">прайс → приёмка</text>
+  <path class="edge" marker-end="url(#a)" d="M570 228 C700 228 760 228 760 228"/><text class="label" x="700" y="220">заказ → поступление</text>
+  <path class="edge" marker-end="url(#a)" d="M910 228 C1030 228 1120 228 1120 228"/><text class="label" x="1030" y="220">остатки/движение</text>
+  <path class="edge" marker-end="url(#a)" d="M910 308 C1030 308 1120 308 1120 308"/><text class="label" x="1030" y="300">списания</text>
+  <path class="edge" marker-end="url(#a)" d="M910 388 C1030 388 1120 388 1120 388"/><text class="label" x="1030" y="380">инвентаризация</text>
+  <path class="edge" marker-end="url(#a)" d="M1280 200 C1280 230 1120 250 980 210"/><text class="label" x="1210" y="240">продажи/consumption</text>
+</svg>
+

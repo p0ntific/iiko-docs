@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2400 1400" width="100%" role="graphics-document document" aria-roledescription="flowchart">
+  <defs>
+    <style>
+      .bg{fill:#292d3e}
+      .panel{fill:rgba(113,124,180,.16);stroke:rgba(255,255,255,.1)}
+      .node{fill:#2e3142;stroke:rgba(255,255,255,.08);stroke-width:1;rx:8;ry:8}
+      .node text{fill:#e6e9ff;font:600 14px Trebuchet MS,Verdana,Arial,sans-serif}
+      .title{fill:#e6e9ff;font:700 18px Trebuchet MS,Verdana,Arial,sans-serif}
+      .cluster-title{fill:#fff;font:600 14px Trebuchet MS,Verdana,Arial,sans-serif}
+      .edge{stroke:#babed8;stroke-width:2;fill:none}
+      .edge.dashed{stroke-dasharray:6 4}
+      .label{fill:#babed8;font:12px Trebuchet MS,Verdana,Arial,sans-serif}
+      a{text-decoration:none}
+      .mdm .node{fill:#33444f}
+      .menu .node{fill:#3d4a3f}
+      .price .node{fill:#3e3b52}
+      .pub .node{fill:#3b4e5a}
+      .scm .node{fill:#4a3d3d}
+      .store .node{fill:#3f3d4a}
+      .rpt .node{fill:#364d5a}
+      .adm .node{fill:#3a3a3a}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#babed8"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="2400" height="1400"/>
+  <text x="1200" y="40" text-anchor="middle" class="title">iikoChain — Карта модулей и страниц</text>
+
+  <!-- Clusters -->
+  <g class="adm"><rect class="panel" x="1680" y="200" width="640" height="420"/><text x="1700" y="220" class="cluster-title">Администрирование</text></g>
+  <g class="mdm"><rect class="panel" x="80" y="200" width="520" height="420"/><text x="100" y="220" class="cluster-title">Мастер-данные</text></g>
+  <g class="menu"><rect class="panel" x="640" y="200" width="400" height="420"/><text x="660" y="220" class="cluster-title">Меню/Рецепты</text></g>
+  <g class="price"><rect class="panel" x="1060" y="200" width="400" height="420"/><text x="1080" y="220" class="cluster-title">Цены/Зоны</text></g>
+  <g class="pub"><rect class="panel" x="1480" y="200" width="180" height="420"/><text x="1490" y="220" class="cluster-title">Публикации</text></g>
+  <g class="scm"><rect class="panel" x="640" y="660" width="640" height="420"/><text x="660" y="680" class="cluster-title">SCM/Логистика/DC</text></g>
+  <g class="store"><rect class="panel" x="1300" y="660" width="500" height="420"/><text x="1320" y="680" class="cluster-title">Точки/Франчайзи</text></g>
+  <g class="rpt"><rect class="panel" x="180" y="1100" width="820" height="200"/><text x="200" y="1120" class="cluster-title">Отчётность</text></g>
+
+  <!-- Nodes with links -->
+  <g class="node" transform="translate(1080,120)"><a xlink:href="pages/overview.md"><rect width="320" height="48"/><text x="160" y="30" text-anchor="middle">Обзор</text></a></g>
+
+  <!-- Admin -->
+  <g class="adm">
+    <g class="node" transform="translate(1700,240)"><a xlink:href="pages/security.md"><rect width="300" height="56"/><text x="150" y="34" text-anchor="middle">Безопасность</text></a></g>
+    <g class="node" transform="translate(1700,330)"><a xlink:href="pages/integrations.md"><rect width="300" height="56"/><text x="150" y="34" text-anchor="middle">Интеграции</text></a></g>
+    <g class="node" transform="translate(1700,420)"><a xlink:href="pages/organizational-structure.md"><rect width="300" height="56"/><text x="150" y="34" text-anchor="middle">Орг. структура</text></a></g>
+  </g>
+
+  <!-- MDM -->
+  <g class="mdm">
+    <g class="node" transform="translate(100,240)"><a xlink:href="pages/master-data.md"><rect width="300" height="56"/><text x="150" y="34" text-anchor="middle">Мастер-данные</text></a></g>
+  </g>
+
+  <!-- Menu/Recipes -->
+  <g class="menu">
+    <g class="node" transform="translate(660,240)"><a xlink:href="pages/menu-management.md"><rect width="300" height="56"/><text x="150" y="34" text-anchor="middle">Меню и рецептуры</text></a></g>
+  </g>
+
+  <!-- Price zones -->
+  <g class="price">
+    <g class="node" transform="translate(1080,240)"><a xlink:href="pages/price-zones.md"><rect width="300" height="56"/><text x="150" y="34" text-anchor="middle">Зоны цен</text></a></g>
+  </g>
+
+  <!-- Publications -->
+  <g class="pub">
+    <g class="node" transform="translate(1490,240)"><a xlink:href="pages/distribution.md"><rect width="160" height="56"/><text x="80" y="34" text-anchor="middle">Публикации</text></a></g>
+  </g>
+
+  <!-- Promotions/Loyalty -->
+  <g class="menu">
+    <g class="node" transform="translate(660,330)"><a xlink:href="pages/promotions.md"><rect width="300" height="56"/><text x="150" y="34" text-anchor="middle">Акции/Лояльность</text></a></g>
+    <g class="node" transform="translate(100,330)"><a xlink:href="pages/loyalty.md"><rect width="300" height="56"/><text x="150" y="34" text-anchor="middle">Лояльность (уровни)</text></a></g>
+  </g>
+
+  <!-- SCM/DC/Logistics -->
+  <g class="scm">
+    <g class="node" transform="translate(660,700)"><a xlink:href="pages/procurement.md"><rect width="300" height="56"/><text x="150" y="34" text-anchor="middle">Закупки/Контракты</text></a></g>
+    <g class="node" transform="translate(980,700)"><a xlink:href="pages/central-warehouse.md"><rect width="300" height="56"/><text x="150" y="34" text-anchor="middle">Центральный склад (DC)</text></a></g>
+    <g class="node" transform="translate(820,790)"><a xlink:href="pages/logistics.md"><rect width="300" height="56"/><text x="150" y="34" text-anchor="middle">Логистика/Пополнение</text></a></g>
+  </g>
+
+  <!-- Stores/Consolidation -->
+  <g class="store">
+    <g class="node" transform="translate(1320,700)"><rect width="300" height="56"/><text x="150" y="34" text-anchor="middle">Точки (iikoFront)</text></g>
+    <g class="node" transform="translate(1320,790)"><a xlink:href="pages/stock-consolidation.md"><rect width="300" height="56"/><text x="150" y="34" text-anchor="middle">Консолидация</text></a></g>
+  </g>
+
+  <!-- Reports -->
+  <g class="rpt">
+    <g class="node" transform="translate(220,1140)"><a xlink:href="pages/reports.md"><rect width="360" height="56"/><text x="180" y="34" text-anchor="middle">Отчётность</text></a></g>
+  </g>
+
+  <!-- Edges -->
+  <path class="edge" marker-end="url(#arrow)" d="M400 268 C520 268 640 268 660 268"/>
+  <path class="edge" marker-end="url(#arrow)" d="M960 268 C1030 268 1060 268 1080 268"/>
+  <path class="edge" marker-end="url(#arrow)" d="M1380 268 C1450 268 1480 268 1490 268"/>
+  <path class="edge" marker-end="url(#arrow)" d="M1490 296 C1490 620 1470 720 1320 728"/>
+
+  <path class="edge" marker-end="url(#arrow)" d="M810 728 C980 728 1180 728 1320 728"/>
+  <path class="edge" marker-end="url(#arrow)" d="M1130 728 C1200 728 1260 728 1320 728"/>
+  <path class="edge" marker-end="url(#arrow)" d="M970 818 C1100 900 1220 878 1320 818"/>
+
+  <path class="edge" marker-end="url(#arrow)" d="M1470 818 C1380 980 1000 1120 580 1168"/>
+
+  <!-- Admin dashed dependencies -->
+  <path class="edge dashed" marker-end="url(#arrow)" d="M1700 268 C1480 240 1200 240 1080 240"/>
+  <path class="edge dashed" marker-end="url(#arrow)" d="M1700 268 C1360 220 760 220 400 240"/>
+  <path class="edge dashed" marker-end="url(#arrow)" d="M1700 268 C1540 540 1140 620 960 700"/>
+
+  <!-- Legend -->
+  <g transform="translate(1680,1140)"><rect class="panel" width="600" height="120"/><text x="20" y="1170" class="cluster-title">Условные обозначения</text><text x="20" y="1190" class="node label">Сплошная стрелка — поток данных/документов</text><text x="20" y="1210" class="node label">Пунктир — зависимость/настройки</text></g>
+</svg>
+
